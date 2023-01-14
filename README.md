@@ -5,8 +5,8 @@
 - In this repository, there are two alternative design ideas for a Starbucks App
 
 ## Features
-- Multi-language Support
-- Multi-screen support
+- Multi-language Support (EN, TR)
+- Multi-screen support (Light Mode, Dark Mode)
 
 
 
