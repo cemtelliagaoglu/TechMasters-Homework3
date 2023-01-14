@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y4c-i7-Npz">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AlternativeVC-->
+        <scene sceneID="oJM-Xj-vBe">
+            <objects>
+                <viewController id="2ik-Rh-zAD" customClass="AlternativeVC" customModule="TechMasters_Homework3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SH3-R2-y6F">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks-logo" translatesAutoresizingMaskIntoConstraints="NO" id="0ko-WM-q1e">
+                                <rect key="frame" x="156.66666666666666" y="75" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="sTC-lx-X9I"/>
+                                    <constraint firstAttribute="width" constant="80" id="wBc-Gy-YkS"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="40"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valentine's Day Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2rC-8A-kME">
+                                <rect key="frame" x="14.333333333333343" y="171" width="364.33333333333326" height="41"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mLl-H8-ALb">
+                                <rect key="frame" x="8" y="244" width="377" height="350"/>
+                                <color key="backgroundColor" name="cellBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="350" id="eCE-dp-BFT"/>
+                                </constraints>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="nPt-5X-vqQ">
+                                <rect key="frame" x="36.666666666666657" y="730.66666666666663" width="319.66666666666674" height="37.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t03-5k-lyI">
+                                        <rect key="frame" x="0.0" y="0.0" width="151.33333333333334" height="37.333333333333336"/>
+                                        <color key="backgroundColor" name="cellBackgroundColor"/>
+                                        <color key="tintColor" name="textColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="See Details">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTB-XB-S9k">
+                                        <rect key="frame" x="168.33333333333331" y="0.0" width="151.33333333333331" height="37.333333333333336"/>
+                                        <color key="backgroundColor" name="cellBackgroundColor"/>
+                                        <color key="tintColor" name="textColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Not Interested">
+                                            <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="80e-F2-l3S"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="2rC-8A-kME" firstAttribute="centerX" secondItem="SH3-R2-y6F" secondAttribute="centerX" id="98D-3S-Lq2"/>
+                            <constraint firstItem="nPt-5X-vqQ" firstAttribute="centerX" secondItem="SH3-R2-y6F" secondAttribute="centerX" id="G6Q-vM-WIl"/>
+                            <constraint firstItem="80e-F2-l3S" firstAttribute="trailing" secondItem="mLl-H8-ALb" secondAttribute="trailing" constant="8" id="OUG-Ek-sie"/>
+                            <constraint firstItem="80e-F2-l3S" firstAttribute="bottom" secondItem="nPt-5X-vqQ" secondAttribute="bottom" constant="50" id="Rw3-JE-cRt"/>
+                            <constraint firstItem="0ko-WM-q1e" firstAttribute="top" secondItem="80e-F2-l3S" secondAttribute="top" constant="16" id="Wle-6X-UDl"/>
+                            <constraint firstItem="2rC-8A-kME" firstAttribute="top" secondItem="0ko-WM-q1e" secondAttribute="bottom" constant="16" id="a4q-bM-fBo"/>
+                            <constraint firstItem="0ko-WM-q1e" firstAttribute="centerX" secondItem="SH3-R2-y6F" secondAttribute="centerX" id="du0-w0-tKr"/>
+                            <constraint firstItem="mLl-H8-ALb" firstAttribute="leading" secondItem="80e-F2-l3S" secondAttribute="leading" constant="8" id="ev3-GD-3mV"/>
+                            <constraint firstItem="mLl-H8-ALb" firstAttribute="top" secondItem="2rC-8A-kME" secondAttribute="bottom" constant="32" id="wzZ-RX-iFT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="mLl-H8-ALb" id="AdI-bj-sWS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="t4m-qg-sSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="-320"/>
+        </scene>
+        <!--MainVC-->
+        <scene sceneID="Noi-Hg-JdF">
+            <objects>
+                <viewController id="y4c-i7-Npz" customClass="MainVC" customModule="TechMasters_Homework3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="o0k-ed-Pbq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starbucks-logo" translatesAutoresizingMaskIntoConstraints="NO" id="VU7-yH-8bI">
+                                <rect key="frame" x="156.66666666666666" y="75" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="eTj-Jp-5qK"/>
+                                    <constraint firstAttribute="width" constant="80" id="olW-XC-MWh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 1" translatesAutoresizingMaskIntoConstraints="NO" id="DKc-Ne-ZiF">
+                                <rect key="frame" x="8" y="220.33333333333337" width="377" height="200"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valentine's Day Special" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ev8-xc-Oay">
+                                <rect key="frame" x="30" y="175" width="333.33333333333331" height="37.333333333333343"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="32"/>
+                                <color key="textColor" name="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="bEt-UL-7xW">
+                                <rect key="frame" x="8" y="428.33333333333326" width="377" height="342"/>
+                                <color key="backgroundColor" name="cellBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lw8-2v-620">
+                                <rect key="frame" x="165.33333333333334" y="778.33333333333337" width="62.333333333333343" height="31.666666666666629"/>
+                                <color key="backgroundColor" name="cellBackgroundColor"/>
+                                <color key="tintColor" name="textColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Close">
+                                    <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="12"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AIc-re-cba"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lw8-2v-620" firstAttribute="centerX" secondItem="o0k-ed-Pbq" secondAttribute="centerX" id="5yX-EV-Ekf"/>
+                            <constraint firstItem="AIc-re-cba" firstAttribute="trailing" secondItem="bEt-UL-7xW" secondAttribute="trailing" constant="8" id="7hR-cE-OT3"/>
+                            <constraint firstItem="AIc-re-cba" firstAttribute="bottom" secondItem="Lw8-2v-620" secondAttribute="bottom" constant="8" id="Dm1-pH-7U7"/>
+                            <constraint firstItem="ev8-xc-Oay" firstAttribute="centerX" secondItem="o0k-ed-Pbq" secondAttribute="centerX" id="Okc-c5-23M"/>
+                            <constraint firstItem="DKc-Ne-ZiF" firstAttribute="leading" secondItem="AIc-re-cba" secondAttribute="leading" constant="8" id="QPC-3U-d5P"/>
+                            <constraint firstItem="AIc-re-cba" firstAttribute="trailing" secondItem="DKc-Ne-ZiF" secondAttribute="trailing" constant="8" id="TKn-sm-sFX"/>
+                            <constraint firstItem="bEt-UL-7xW" firstAttribute="leading" secondItem="AIc-re-cba" secondAttribute="leading" constant="8" id="V4e-CY-kWX"/>
+                            <constraint firstItem="bEt-UL-7xW" firstAttribute="top" secondItem="DKc-Ne-ZiF" secondAttribute="bottom" constant="8" id="YDl-zn-l78"/>
+                            <constraint firstItem="Lw8-2v-620" firstAttribute="top" secondItem="bEt-UL-7xW" secondAttribute="bottom" constant="8" id="hbq-kX-MVs"/>
+                            <constraint firstItem="VU7-yH-8bI" firstAttribute="top" secondItem="AIc-re-cba" secondAttribute="top" constant="16" id="iqE-nt-zPw"/>
+                            <constraint firstItem="DKc-Ne-ZiF" firstAttribute="top" secondItem="ev8-xc-Oay" secondAttribute="bottom" constant="8" id="ngz-Zb-WBK"/>
+                            <constraint firstItem="ev8-xc-Oay" firstAttribute="top" secondItem="VU7-yH-8bI" secondAttribute="bottom" constant="20" id="pA2-uQ-sZU"/>
+                            <constraint firstItem="VU7-yH-8bI" firstAttribute="centerX" secondItem="o0k-ed-Pbq" secondAttribute="centerX" id="tth-rN-rva"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="VU7-yH-8bI" id="Z8e-Jw-TV2"/>
+                        <outlet property="tableView" destination="bEt-UL-7xW" id="CeY-9v-NjS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ujf-Ko-aXK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-204" y="-320"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Group 1" width="400" height="200"/>
+        <image name="starbucks-logo" width="920" height="920"/>
+        <namedColor name="backgroundColor">
+            <color red="0.0078431372549019607" green="0.44313725490196076" blue="0.29411764705882354" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="cellBackgroundColor">
+            <color red="0.17254901960784313" green="0.53333333333333333" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
